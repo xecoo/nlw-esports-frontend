@@ -13,7 +13,7 @@ function App() {
           <img src="/game-1.png" alt="" />
 
           <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
-            <strong className="font-bold text-white block">League of Legends</strong> 
+            <strong className="font-bold text-white block">League of Legends</strong>
             <span className="text-zinc-300 text-sm mt-1">4 anúncions</span>
           </div>
         </a>
@@ -58,6 +58,24 @@ function App() {
           </div>
         </a>
       </div>
+
+      <div className="pt-1 mt-8 bg-nlw-gradient self-stretch rounded-lg overflow-hidden">
+        <div className="bg-[#2a2634] px-8 py-6 flex justify-between items-center">
+          <div>
+            <strong className="text-2xl text-white font-black block">
+              Não encontrou o seu duo?
+            </strong>
+            <span className="text-zinc-400">Publique um anúncio para encontrar novos players</span>
+          </div>
+
+          <button className="py-3 px-4 text-white rounded hover:bg-violet-600 bg-violet-500">
+            
+            Publicar anúncio
+          </button>
+
+        </div>
+      </div>
+
 
     </div>
   )
