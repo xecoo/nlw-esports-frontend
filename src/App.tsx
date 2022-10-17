@@ -1,5 +1,5 @@
 import './styles/main.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import logoImg from './assets/logo-nlw-esports.png'
 import { GameBanner } from './components/GameBanner/GameBanner'
 import { CreateAdBanner } from './components/CreateAdBanner/CreateAdBanner'
@@ -10,8 +10,14 @@ function App() {
 
   function handleButtonClick()
   {
-    setHasUserClickedOnButton(true)
+    setHasUserClickedOnButton(!hasUserClickedOnButton)
   }
+
+  useEffect(() => {
+    console.log("teste")
+  },[
+    hasUserClickedOnButton
+  ])
 
   return (
     <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
