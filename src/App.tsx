@@ -1,7 +1,7 @@
 import './styles/main.css'
 import logoImg from './assets/logo-nlw-esports.png'
 import { MagnifyingGlassPlus } from 'phosphor-react'
-import { GameBanner } from './components/GameBanner'
+import { GameBanner } from './components/GameBanner/GameBanner'
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         Seu <span className="text-transparent bg-nlw-gradient bg-clip-text">duo</span>  está aqui.
       </h1>
       <div className="grid grid-cols-6 gap-6 mt-16">
-        <GameBanner />
-
+        
+        <GameBanner bannerUrl="/game-1.png" title="league of Legends" adsCount={5} />
         
       </div>
 
